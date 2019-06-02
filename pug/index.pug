@@ -1,0 +1,254 @@
+doctype html
+html(lang = 'ru')
+	head
+		meta(charset = 'UTF-8')
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible" content="ie=edge")
+
+		link(rel="stylesheet" href="css/style.css")
+		title Портфолио
+
+		//- Favicon
+		link(rel='shortcut icon', href='favicon/favicon.ico', type='image/x-icon')
+		link(rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png")
+		link(rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png")
+		link(rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png")
+		link(rel="manifest" href="favicon/site.webmanifest")
+		link(rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5")
+		meta(name="msapplication-TileColor" content="#da532c")
+		meta(name="theme-color" content="#ffffff")
+
+	body.body
+		div#page
+			header.header
+				div.container.header_flex
+					div.logo
+						a.logo__link(href="#!") Лого
+					div.info
+						nav.nav
+							ul.nav__list
+								li.nav__item
+									a.nav__link(href="#!") Как мы работаем
+								li.nav__item
+									a.nav__link(href="#!") Тарифы
+								li.nav__item
+									a.nav__link(href="#!") О компании
+								li.nav__item
+									a.nav__link(href="#!") Карта точек
+						div.number
+							a.number__link(href="#!") +7 (000) 000 00 00
+
+
+			main.main
+				section.intro
+					div.container.intro_flex
+						div.heading
+							h1.heading__title Отправляйте посылки и документы вместе с
+								span.heading__title.heading__title_colored  название компании
+						div.content
+							form.form(action="#")
+								div.form__group
+									div.form__control
+										select.form__select.js-formSelectFrom
+											option.form__option(value="")
+											option.form__option(value="RU-MOW") Москва
+											option.form__option(value="RU-SPE") Санкт-Петербург
+											option.form__option(value="RU-AST") Астрахань
+											option.form__option(value="RU-BEL") Белгород
+								div.form__group
+									div.form__control
+										select.form__select.js-formSelectTo
+											option.form__option(value="")
+											option.form__option(value="RU-MOW") Москва
+											option.form__option(value="RU-SPE") Санкт-Петербург
+											option.form__option(value="RU-AST") Астрахань
+											option.form__option(value="RU-BEL") Белгород
+								div.form__group
+									div.form__control
+										select.form__select.js-formSelectSize
+											option.form__option(value="")
+											option.form__option(value="S") S (20/20/20)
+											option.form__option(value="M") M (40/30/40)
+											option.form__option(value="L") L (60/40/40)
+								div.form__group
+									div.form__control
+										button.form__button.button(type="submit") Рассчитать
+
+							div.socials
+								a.socials__link(href="#!")
+								a.socials__link(href="#!")
+								a.socials__link(href="#!")
+
+
+				section.guide
+					div.container
+						div.heading
+							h2.heading__title Как мы работаем
+						div.content
+							div.cards
+								div.card
+									div.card__head
+										h3.card__title Безопасно
+									div.card__body
+										p.card__text Если посылка потеряется или повредится, возместим ущерб.
+								div.card
+									div.card__head
+										h3.card__title Бережно
+									div.card__body
+										p.card__text Трепетно относимся к каждой посылке.
+								div.card
+									div.card__head
+										h3.card__title По адекватной цене
+									div.card__body
+										p.card__text У нас доступные базовые тарифы.
+								div.card
+									div.card__head
+										h3.card__title Быстро
+									div.card__body
+										p.card__text Не задерживаем посылки на складе.
+
+
+				section.tariffs
+					div.container
+						div.heading
+							h2.heading__title Тарифы
+						div.content
+							div.cards
+								div.card
+									div.card__head
+										h3.card__title Тариф “Город 1”
+									div.card__body
+										h5.card__subtitle Доставка по городу:
+										ul.card__list
+											li.card__item
+												p.card__text Точка - точка
+												p.card__text.card__text_cost 150 &#8381;
+											li.card__item
+												p.card__text Точка - точка
+												p.card__text.card__text_cost 250 &#8381;
+											li.card__item
+												p.card__text Адрес - адрес
+												p.card__text.card__text_cost 300 &#8381;
+										p.card__text.card__text_detailed Вес посылки не более 3 кг
+										p.card__text.card__text_detailed Размер посылки не более 20/20/20
+
+								div.card
+									div.card__head
+										h3.card__title Тариф “Город 1”
+									div.card__body
+										h5.card__subtitle Доставка по городу:
+										ul.card__list
+											li.card__item
+												p.card__text Точка - точка
+												p.card__text.card__text_cost 150 &#8381;
+											li.card__item
+												p.card__text Точка - точка
+												p.card__text.card__text_cost 250 &#8381;
+											li.card__item
+												p.card__text Адрес - адрес
+												p.card__text.card__text_cost 300 &#8381;
+										p.card__text.card__text_detailed Вес посылки не более 3 кг
+										p.card__text.card__text_detailed Размер посылки не более 20/20/20
+
+								div.card
+									div.card__head
+										h3.card__title Тариф “Город 3”
+									div.card__body
+										h5.card__subtitle Доставка по городу:
+										ul.card__list
+											li.card__item
+												p.card__text Точка - точка
+												p.card__text.card__text_cost 150 &#8381;
+											li.card__item
+												p.card__text Точка - точка
+												p.card__text.card__text_cost 250 &#8381;
+											li.card__item
+												p.card__text Адрес - адрес
+												p.card__text.card__text_cost 300 &#8381;
+											p.card__text.card__text_detailed Вес посылки не более 3 кг
+											p.card__text.card__text_detailed Размер посылки не более 20/20/20
+
+								div.card
+									div.card__head
+										h3.card__title Тариф “Город 4”
+									div.card__body
+										h5.card__subtitle Доставка по городу:
+										ul.card__list
+											li.card__item
+												p.card__text Точка - точка
+												p.card__text.card__text_cost 150 &#8381;
+											li.card__item
+												p.card__text Точка - точка
+												p.card__text.card__text_cost 250 &#8381;
+											li.card__item
+												p.card__text Адрес - адрес
+												p.card__text.card__text_cost 300 &#8381;
+										p.card__text.card__text_detailed Вес посылки не более 3 кг
+										p.card__text.card__text_detailed Размер посылки не более 20/20/20
+
+
+				section.about
+					div.container.about_flex
+						div.heading
+							h2.heading__title Кто мы
+						div.content
+							div.description
+								p.description__text
+									| “Название компании“ - это сервис доставки х посылок по всей России.
+									| Как это работает? Любой человек может оставить заявку онлайн и принести
+									| посылку в ближайший «Название компании». Мы быстро доставим ее в
+									| «Название компании», который находится по удобному для получателя адресу.
+									| Посылки можно отправлять как по городу, так и в любой регион России. Это
+									| отличный вариант, чтобы отправить подарок другу, важные бумаги коллеге
+									| или забытую вещь родственнику. Наша новая услуга поможет владельцам
+									| небольших интернет-магазинов организовать доставку заказов. Мы постарались
+									| сделать «Название компании» максимально удобным, быстрым, надежным и доступным.
+
+
+				section.offices
+					div.container.offices_flex
+						div.heading
+							h2.heading__title Наши офисы
+						div.content
+							div.description
+								p.description__text
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			footer.footer
+				div.container.footer_flex
+					div.logo
+						a.logo__link(href="#!") Лого
+					div.contacts
+						ul.contacts__list
+							li.contacts__item
+								a.contacts__link(href="#!") Как мы работаем
+							li.contacts__item
+								a.contacts__link(href="#!") Тарифы
+							li.contacts__item
+								a.contacts__link(href="#!") О компании
+							li.contacts__item
+								a.contacts__link(href="#!") Карта точек
+							li.contacts__item
+								a.contacts__link(href="#!") Рассчитать стоимость
+
+				include includes/popup.pug
+
+
+
+		script(src="js/script.js")
+
